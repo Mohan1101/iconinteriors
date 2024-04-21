@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <link href='index.css' rel='stylesheet' type='text/css'>
+  <title>Icon Interiors</title>
+</head>
+
+<body>
+  <div class="main md:px-6 flex flex-col md:pb-12 ">
+     <!-- nav-top -->
+
+     <nav class="p-2 flex gap-5 items-center justify-between text-base font-medium whitespace-nowrap">
+    
+      <img
+      src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.png?alt=media&token=4c49c013-68f9-44ba-ac25-a3bcf8e083fc"
+        alt="Logo" class="block md:hidden w-24" />
+
+
+
+
+
+      <a href="tel:9940104232" class="flex gap-2 items-center">
+        <img
+          src="./assests/Vector.svg"
+          alt="Phone Icon" class="w-8 h-8" />
+        <h3 class="text-black ">Contact Us</h3>
+      </a>
+
+      <button data-collapse-toggle="navbar-dropdown2" type="button"
+        class="inline-flex p-2 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+        aria-controls="navbar-dropdown2" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+
+      
+
+    </nav>
+    <div class="hidden -mt-2 mb-2 w-full md:mt-0 md:block md:w-auto" id="navbar-dropdown2">
+      <ul
+        class="flex flex-col gap-6 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-light md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-light">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray  rounded md:bg-transparent  md:p-0 "
+            aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="about.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0  ">About</a>
+        </li>
+        <li>
+          <a id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+            class="flex items-center justify-between text-gray w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto ">Products
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg></a>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar1"
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="product-1.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Modular Kitchen</a>
+              </li>
+              <li>
+                <a href="product-2.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Bedroom Wardrobe</a>
+              </li>
+              <li>
+                <a href="product-3.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Living Room Interior</a>
+              </li>
+              <li>
+                <a href="product-4.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Workstation</a>
+              </li>
+            </ul>
+
+          </div>
+        </li>
+
+        <li>
+          <a href="gallery.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Gallery</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Contact</a>
+        </li>
+      </ul>
+    </div>
+    
+
+
+ 
+<!-- navbar -->
+<nav class="hidden md:block -ml-6 fixed z-50 bg-light w-full ">
+
+
+  <div class="max-w-screen-xl flex flex-wrap items-center gap-12 mx-auto p-2">
+
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <div class="flex gap-6 items-center rtl:space-x-reverse">
+        <a href="index.html">
+         
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.png?alt=media&token=4c49c013-68f9-44ba-ac25-a3bcf8e083fc"
+          alt="Logo" class="w-28 h-16 hidden md:block" />
+        </a>
+        <a href="https://maps.app.goo.gl/jy3xowh73zQX9a3L7" target="_blank" rel="noopener noreferrer">
+          <div class="hidden md:flex flex-col">
+            <div class="font-medium ">Vanagaram, Chennai-95</div>
+            <div class="text-gray">76, Krishna Industrial Estate</div>
+          </div>
+        </a>
+      </div>
+    </a>
+
+
+    <div class="hidden -mt-16 w-full md:mt-0 md:block md:w-auto" id="navbar-dropdown">
+      <ul
+        class="flex flex-col gap-6 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-light md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-light">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray  rounded md:bg-transparent  md:p-0 "
+            aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="about.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0  ">About</a>
+        </li>
+        <li>
+          <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center justify-between text-gray w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto ">Products
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg></a>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar"
+            class="z-60 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="product-1.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Modular Kitchen</a>
+              </li>
+              <li>
+                <a href="product-2.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Bedroom Wardrobe</a>
+              </li>
+              <li>
+                <a href="product-3.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Living Room Interior</a>
+              </li>
+              <li>
+                <a href="product-4.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Workstation</a>
+              </li>
+            </ul>
+
+          </div>
+        </li>
+
+        <li>
+          <a href="gallery.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Gallery</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <button onclick="location.href='contact.html'" class="bg-purple text-white justify-center px-4 py-3.5  font-medium ">Get Free Estimate</button>
+  </div>
+</nav>
+  
+  <main class="relative sm:px-4 md:px-12 mt-4 flex flex-col gap-0 md:flex-row md:mt-8 md:gap-20 " style="background-image: url('https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/hero.jpg?alt=media&token=ae1d602f-f883-43f5-a445-cadf41cc4bc7'); background-size: cover; background-position: center; height: 55vh;">
+   
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  
+    <div class="z-10 mt-16 pl-4 sm:mt-6 lg:mt-20   sm:ml-2 lg:ml-20 flex flex-col gap-4">
+      <div class=" font-bold my-0 text-2xl lg:text-6xl md:my-4">
+        <h1 class="text-white">"We are the manufacturer and supplier of wardrobe, modular kitchen & commercial interiors"</h1>
+      </div>
+    </div>
+    
+  </main>
+
+     
+
+
+      <!-- Elegant 1 -->
+
+      <div class="flex flex-col gap-12 md:flex-row md:gap-60 mt-20 md:mt-32 sm:px-8  lg:px-14">
+
+        <section class="flex flex-col px-4 md:px-0 mt-2.5 sm:w-full md:w-2/5 font-medium ">
+          <h1 class="text-2xl md:text-5xl font-semibold text-black">Elevate the Quality of Your Space without Compromise
+          </h1>
+          <p class="mt-6 text-md font-normal text-gray ">Indulge in the pinnacle of furniture quality. Our offerings are
+            artfully fashioned with an unwavering dedication to excellence. From the most exquisite materials to
+            masterful craftsmanship, each creation exudes durability, comfort, and enduring elegance. Enhance your space
+            with the confidence of unparalleled quality and timeless beauty.</p>
+          <div class="flex gap-5 justify-between mt-2 ">
+            <img
+              src="./assests/Subtract (1).svg"
+              alt="Durability Badge" class="" />
+            <p class="flex-auto my-auto max-md:max-w-full">Experience Unparalleled Quality</p>
+          </div>
+          <div class="flex gap-5 justify-between mt-2 ">
+            <img
+            src="./assests/Subtract (1).svg"
+              alt="Durability Badge" class="" />
+            <p class="flex-auto my-auto max-md:max-w-full">Built to Last for Generations</p>
+          </div>
+          <div class="flex gap-5 justify-between mt-2 ">
+            <img
+            src="./assests/Subtract (1).svg"
+              alt="Durability Badge" class="" />
+            <p class="flex-auto my-auto max-md:max-w-full">Loved by Customers Worldwide</p>
+          </div>
+          <!-- <button
+            class="justify-center self-start px-9 py-5 mt-6 font-semibold text-center text-white bg-black btn-border">Shop
+            Now</button> -->
+        </section>
+  
+        <section class="flex relative items-center gap-2 sm:w-full md:w-6/12">
+  
+          <img
+            src="./assests/Group 113 (1).svg"
+            alt="Designer's Choice" class="mt-12 w-12 h-12" />
+          <div class="width-img">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/all%20products%2Fabout-1.jpg?alt=media&token=e7b96add-660b-42ce-a9f0-3d9ec924f720"
+              alt="Elegant Living Space" class="h-full w-full" />
+          </div>
+  
+          <div
+            class="absolute sm:top-4 top-8 md:top-16 md:-left-16 flex gap-4 justify-between items-center px-5 py-3 font-medium bg-white rounded-xl shadow-lg">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/markanderson.jpg?alt=media&token=a41b3c4a-d08e-4e48-8604-7d6d4b45dc31"
+              alt="Mark Anderson Portrait" class="object-cover w-16 h-16 rounded-full" />
+            <div class="flex flex-col gap-2">
+              <p class="text-black">Mark Anderson</p>
+              <p class="text-xs text-light">Interior Designer</p>
+            </div>
+            <img
+            src="./assests/Group 109.svg"
+              alt="Design Award" class="self-stretch my-auto w-10 aspect-[0.98]" />
+          </div>
+          <div
+            class="absolute md:-right-12 flex z-10 gap-4 self-end px-6 py-6 mt-96 text-md md:text-lg bg-white rounded-xl shadow-lg">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/515e03797ee79ccb879625a6a487c273837758316cc1b36ed2cdefa90ea37a73?apiKey=cde6bdb7e70f4357a95fb75ad2ba9294&"
+              alt="Detail Focus" class="" />
+            <p class="">We think about every detail</p>
+          </div>
+  
+        </section>
+      </div>
+      <!-- Elegant 2 -->
+      <div class="bg-light flex flex-col py-12 sm:gap-12 md:flex-row md:gap-20 mt-20 md:mt-32 pl-0 pr-0 lg:pl-24 lg:pr-16">
+  
+        <section class="flex flex-row-reverse md:flex-row relative items-center gap-2 sm:w-full md:w-6/12">
+  
+          <img
+            src="./assests/Group 113 (2).svg"
+            alt="Designer's Choice" class="mt-12 w-12 h-12" />
+          <div class="width-img">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/all%20products%2Fabout-2.jpg?alt=media&token=5aa59528-7d1f-48cb-be31-4d02ced0462d"
+              alt="Elegant cozy furniture" class="h-full w-full" />
+          </div>
+  
+          <div
+            class="absolute sm:top-4 top-8 md:top-16 md:-left-16 flex gap-4 justify-between items-center px-5 py-3 font-medium bg-white rounded-xl shadow-lg">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/harry.jpg?alt=media&token=cf6367cb-2e62-467c-8f3b-b10e22c0dd16"
+              alt="Mark Anderson Portrait" class="object-cover w-16 h-16 rounded-full" />
+            <div class="flex flex-col gap-2">
+              <p class="text-black">Victor Adams</p>
+              <p class="text-xs w-2/3 text-light">Interior Design and Styling</p>
+            </div>
+            <img
+              src="./assests/Group 109.svg"
+              alt="Design Award" class="self-stretch my-auto w-10 aspect-[0.98]" />
+          </div>
+          <div
+            class="absolute md:-right-20 flex z-10 gap-4 self-end px-6 py-6 mt-96 text-md md:text-lg bg-white rounded-xl shadow-lg">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/515e03797ee79ccb879625a6a487c273837758316cc1b36ed2cdefa90ea37a73?apiKey=cde6bdb7e70f4357a95fb75ad2ba9294&"
+              alt="Detail Focus" class="" />
+            <p class="grow">We guarantee you comfort</p>
+          </div>
+  
+        </section>
+  
+  
+        <section class="flex flex-col mt-2.5 px-4 md:px-0 sm:w-full md:w-2/5 font-medium  ">
+          <h1 class="text-2xl md:text-5xl font-semibold text-black">Elevate Your Spirits with Cozy Furniture.</h1>
+          <p class="mt-6 text-md font-normal text-gray ">Your environment wields a deep influence on your emotional
+            state. Uncover the power of our premium furniture to metamorphose your surroundings into a sanctuary of
+            contentment and joy. Craft an atmosphere that fosters your well-being and uplifts your mood with a
+            harmonious fusion of style and comfort.</p>
+          <div class="flex gap-5 justify-between mt-2 ">
+            <img
+              src="./assests/Subtract (1).svg"
+              alt="Durability Badge" class="" />
+            <p class="flex-auto my-auto max-md:max-w-full">Unmatched Comfort</p>
+          </div>
+          <div class="flex gap-5 justify-between mt-2 ">
+            <img
+            src="./assests/Subtract (1).svg"
+              alt="Durability Badge" class="" />
+            <p class="flex-auto my-auto max-md:max-w-full">Crafted for Quality</p>
+          </div>
+          <div class="flex gap-5 justify-between mt-2 ">
+            <img
+            src="./assests/Subtract (1).svg"
+              alt="Durability Badge" class="" />
+            <p class="flex-auto my-auto max-md:max-w-full">Stylish Elegance</p>
+          </div>
+          <button
+            class="justify-center self-start px-9 py-5 mt-6 font-semibold text-center text-white bg-black btn-border">Shop
+            Now</button>
+        </section>
+  
+      </div>
+
+      <!--Our Trusted Partners-->
+
+    <h1 class="mt-16 text-center text-black-2 text-2xl font-medium md:text-4xl">Our Trusted Partners</h1>
+
+    <div class="my-20 swiper myClientSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start   shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2Froyal-tuche.png?alt=media&token=1b3a17a0-9891-4458-b3ee-7a6be61cf9fa"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start   shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2Fsharon-plywood-250x250.png?alt=media&token=beda4d90-6d60-422d-9a11-acc4d40d7fa4"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start   shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2Fcenturyply.png?alt=media&token=891f95f6-ba63-418e-83b2-edf6c00ddd3b"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start   shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2Fhafele.png?alt=media&token=e5e3c633-e00f-477b-918e-62aa6e64cf89"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start   shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2FBlum.png?alt=media&token=32b1e824-81ed-4d92-b6a7-9fb6d4390e19"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start   shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2Fgreenply.png?alt=media&token=f1da6c59-db73-43d7-8c95-595b03dae4ab"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start  shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2Fgodrej.png?alt=media&token=dd19a024-098c-4b3e-910d-f0d3cbbd7cbf"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start  shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2FHettich-Group-logo.png?alt=media&token=c1274eeb-34f2-4ee0-98c4-1b0821954c24"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start  shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2Fvirgo.png?alt=media&token=2f98790f-6304-4092-a208-70fdf1614540"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start  shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2FMerino-logo.png?alt=media&token=d7a523d2-6eb0-48a0-b5be-3cbe960bebc9"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="bg-white flex flex-col gap-4 items-start  shadow-lg ">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/trusted%20partners%2FGreenlam-Logo-big.png?alt=media&token=118efcce-aab2-4c1d-bdb4-315175b3b75f"
+              alt="Quotation Mark" class="w-32 h-32" />
+            
+          </div>
+        </div>  
+        
+
+      </div>
+      
+
+      <div class="mt-24">
+        <div class="swiper-pagination "></div>
+      </div>
+
+    </div>
+
+    <!--footer-->
+    <footer class="px-10 md:px-32 mt-4 flex flex-col py-12 w-full bg-white -mx-4">
+      <div class="flex flex-col items-start  gap-1  justify-between md:flex-row md:items-center">
+
+        <div class="flex flex-col gap-4 text-lg sm:w-full md:w-52">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.png?alt=media&token=4c49c013-68f9-44ba-ac25-a3bcf8e083fc"
+            alt="Location Image" class="w-40" />
+          <div class="">
+            <span class="font-semibold text-black">Vanagaram, Chennai-95</span>
+            <p class="text-gray-2">76, Krishna Industrial Estate</p>
+          </div>
+          <nav class="font-medium whitespace-nowrap">
+            <div class="flex gap-3  ">
+              <img
+               src="./assests/Vector.svg"
+                alt="Phone Icon" class="" />
+    
+              <a href="tel:9940104232">
+                <h3 class="text-black">+91 99401 04232</h3>
+              </a>
+    
+            </div>
+            <div class="flex gap-3 justify-between">
+              <img
+                src="./assests/Email (1).svg"
+                alt="Email Icon" class="aspect-[1.06] w-[17px]" />
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@iconinteriorschennai.com" target="_blank"
+                className="">
+                <div class="text-gray-2">info@iconinteriorschennai.com</div>
+              </a>
+    
+            </div>
+            <div class="-ml-36 flex items-center gap-16  justify-between md:hidden ">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.svg?alt=media&token=837427f9-d0e6-40ac-94fa-4e0707692fbe"
+                alt="Logo" class="block md:hidden w-24" />
+    
+    
+    
+    
+    
+        
+              
+    
+            </div>
+    
+          </nav>
+        </div>
+
+        <div class="flex flex-col gap-2" gap-4>
+          <h2 class="text-lg font-bold  text-black">Category</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+            <a href="product-3.html">Living Room</a>
+            <a href="product-2.html">Bed Room</a>
+            <a href="product-1.html">Kitchen</a>
+            <a href="product-4.html">Workspace</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <h2 class="text-lg font-bold  text-black">Popular Service</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+            <a href="wall-partition.html">Wall Partition</a>
+            <a href="sliding-wardrobe.html">Sliding Wardrobe</a>
+            <a href="island-kitchen.html">Island Kitchen</a>
+            <a href="conference-table.html">Conference Table</a>
+
+
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <h2 class="text-lg font-bold  text-black">Sitemap</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+            <a href="product-1.html">Product</a>
+            <a href="about.html">Services</a>
+            <a href="#">Article</a>
+            <a href="about.html">About Us</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <h2 class="text-lg font-bold  text-black">Follow Us</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+
+            <a class='flex items-center gap-2' href="#">
+              <img
+                src="./assests/facebook.svg"
+                alt="facebook" class="aspect-square w-[18px]" />Facebook</a>
+            
+            <a class='flex items-center gap-2' href="#">
+              <img
+                src="./assests/instagram.svg"
+                alt="instagram" class="aspect-square w-[18px]" />Instagram</a>
+            <a class='flex items-center gap-2' href="#">
+              <img
+                src="./assests/twitter.svg"
+                alt="twitter" class="aspect-[0.94] w-[17px]" />Twitter</a>
+
+            <a class="flex items-center gap-2" href="#">
+              <img
+                src="./assests/linkedin.svg"
+                alt="linkedin" class="aspect-[0.94] w-[17px]" />Linkedin</a>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-b border-gray mt-12 ">
+      <p class="mt-4 text-gray-2 text-md ">
+        © 2024 by iconinteriorschennai. All rights reserved.
+      </p>
+    </footer>
+
+</div>
+
+  <!--Flowbite-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      /// small screens one slide and large screens 3 slides
+      slidesPerView: 1,
+      spaceBetween: 30,
+      freeMode: true,
+      autoplay: {
+        delay: 3000,
+
+      },
+      breakpoints: {
+
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    var swiper = new Swiper(".myClientSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  freeMode: true,
+  loop: true, // Enable infinite loop
+  autoplay: {
+    delay: 2500,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});
+document.getElementById("whatsapp-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const formData = new FormData(this);
+  const phoneNumber = "7200263991";
+  // Update the message here
+  const message = `Name: ${formData.get('name')}\nPhone No: ${formData.get('phone')}\nRequirement: ${formData.get('requirement')}\nContent: ${formData.get('content')}`;
+  //message should be already prefilled wuth the message in the whatsapp chat box
+  window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+  this.reset();
+
+
+});
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>

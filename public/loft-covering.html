@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <link href='index.css' rel='stylesheet' type='text/css'>
+  <title>Icon Interiors</title>
+</head>
+
+<body>
+  <div class="main md:px-6 flex flex-col md:pb-12 ">
+        <!-- nav-top -->
+
+        <nav class="p-2 flex gap-5 items-center justify-between text-base font-medium whitespace-nowrap">
+    
+          <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.png?alt=media&token=4c49c013-68f9-44ba-ac25-a3bcf8e083fc"
+            alt="Logo" class="block md:hidden w-24" />
+    
+    
+    
+    
+    
+          <a href="tel:9940104232" class="flex gap-2 items-center">
+            <img
+              src="./assests/Vector.svg"
+              alt="Phone Icon" class="w-8 h-8" />
+            <h3 class="text-black ">Contact Us</h3>
+          </a>
+    
+          <button data-collapse-toggle="navbar-dropdown2" type="button"
+            class="inline-flex p-2 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+            aria-controls="navbar-dropdown2" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+    
+          
+    
+        </nav>
+        <div class="hidden -mt-2 mb-2 w-full md:mt-0 md:block md:w-auto" id="navbar-dropdown2">
+          <ul
+            class="flex flex-col gap-6 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-light md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-light">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-gray  rounded md:bg-transparent  md:p-0 "
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="about.html"
+                class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0  ">About</a>
+            </li>
+            <li>
+              <a id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+                class="flex items-center justify-between text-gray w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto ">Products
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></a>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar1"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="product-1.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Modular Kitchen</a>
+                  </li>
+                  <li>
+                    <a href="product-2.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Bedroom Wardrobe</a>
+                  </li>
+                  <li>
+                    <a href="product-3.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Living Room Interior</a>
+                  </li>
+                  <li>
+                    <a href="product-4.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Workstation</a>
+                  </li>
+                </ul>
+    
+              </div>
+            </li>
+    
+            <li>
+              <a href="gallery.html"
+                class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html"
+                class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Contact</a>
+            </li>
+          </ul>
+        </div>
+        
+    
+    
+     
+     <!-- navbar -->
+<nav class="hidden md:block -ml-6 fixed z-50 bg-light w-full ">
+
+
+  <div class="max-w-screen-xl flex flex-wrap items-center gap-12 mx-auto p-2">
+
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <div class="flex gap-6 items-center rtl:space-x-reverse">
+        <a href="index.html">
+         
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.png?alt=media&token=4c49c013-68f9-44ba-ac25-a3bcf8e083fc"
+          alt="Logo" class="w-28 h-16 hidden md:block" />
+        </a>
+        <a href="https://maps.app.goo.gl/jy3xowh73zQX9a3L7" target="_blank" rel="noopener noreferrer">
+          <div class="hidden md:flex flex-col">
+            <div class="font-medium ">Vanagaram, Chennai-95</div>
+            <div class="text-gray">76, Krishna Industrial Estate</div>
+          </div>
+        </a>
+      </div>
+    </a>
+
+
+    <div class="hidden -mt-16 w-full md:mt-0 md:block md:w-auto" id="navbar-dropdown">
+      <ul
+        class="flex flex-col gap-6 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-light md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-light">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-gray  rounded md:bg-transparent  md:p-0 "
+            aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="about.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0  ">About</a>
+        </li>
+        <li>
+          <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center justify-between text-gray w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto ">Products
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg></a>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar"
+            class="z-60 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="product-1.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Modular Kitchen</a>
+              </li>
+              <li>
+                <a href="product-2.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Bedroom Wardrobe</a>
+              </li>
+              <li>
+                <a href="product-3.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Living Room Interior</a>
+              </li>
+              <li>
+                <a href="product-4.html" class="text-gray block px-4 py-2 hover:bg-gray-100 ">Workstation</a>
+              </li>
+            </ul>
+
+          </div>
+        </li>
+
+        <li>
+          <a href="gallery.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Gallery</a>
+        </li>
+        <li>
+          <a href="contact.html"
+            class="block py-2 px-3 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 ">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <button onclick="location.href='contact.html'" class="bg-purple text-white justify-center px-4 py-3.5  font-medium ">Get Free Estimate</button>
+  </div>
+</nav>
+
+    <!-- Gallery -->
+
+   
+    <section class="text-center sm:mt-4 md:mt-12 flex flex-col gap-8  items-center">
+      <div class="w-full h-96">
+        
+        <img
+        src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/bedroom%20wardrobe%2Fa2.png?alt=media&token=ba3a1331-f038-4b0a-afcb-7dccc07bc4fe"
+        alt="Interior design 1" class="w-full h-full" />
+      </div>
+      <section class="flex flex-col text-center text-black gap-4 py-8 md:flex-row  md:gap-8  items-center">
+        <div class="cursor-pointer bg-gray px-5 py-2.5 rounded-lg hover:bg-purple hover:text-white" onclick="location.href='product-2.html'">
+          Modular Swing Wardrobe
+
+
+
+        </div>
+        <div class="cursor-pointer bg-gray px-5 py-2.5 rounded-lg hover:bg-purple hover:text-white" onclick="location.href='sliding-wardrobe.html'">
+          Sliding Wardrobe
+
+
+        </div>
+        <div class="cursor-pointer bg-gray px-5 py-2.5 rounded-lg hover:bg-purple hover:text-white" onclick="location.href='readymade-wardrobe.html'">
+          Readymade Wardrobe
+
+
+        </div>
+        <div class="cursor-pointer bg-gray px-5 py-2.5 rounded-lg hover:bg-purple hover:text-white" onclick="location.href='acrylic-wardrobe.html'">
+          Acrylic Wardrobe
+
+
+        </div>
+        <div class="cursor-pointer bg-gray px-5 py-2.5 rounded-lg hover:bg-purple hover:text-white" onclick="location.href='pu-painted-wardrobe.html'">
+  
+          PU Painted Wardrobe
+
+        
+  
+        </div>
+        <div class="cursor-pointer bg-gray px-5 py-2.5 rounded-lg hover:bg-purple hover:text-white" onclick="location.href='laquered-glass-shutter-wardrobe.html'">
+          Laquered Glass Shutter Wardrobe
+          
+          
+     
+  
+        </div>
+        <div class="cursor-pointer bg-gray px-5 py-2.5 rounded-lg hover:bg-purple hover:text-white" onclick="location.href='loft-covering.html'">
+          Loft Covering
+  
+        </div>  
+  
+      </section>
+      <div class="flex flex-col gap-6 items-center">
+        <h2 class="bg-gray-100 px-5 py-2.5 text-lg font-semibold  text-center text-yellow rounded-2xl ">
+          Check Our Collection
+        </h2>
+        <h2 class="font-bold  text-center text-2xl md:text-5xl ">
+            Loft Covering
+        </h2>
+        <p class="text-xl  text-center text-dark">
+          Explore Our Latest Collection of Loft Covering
+        </p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="md:pr-12 mt-8 flex flex-col gap-6 md:flex-row">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/bedroom%20wardrobe%2Fg1.png?alt=media&token=0990d1dd-1508-4bf0-a815-9d2bd90bcd54"
+          alt="Interior design 1" class="sm:w-full md:w-4/12 " />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/bedroom%20wardrobe%2Fg2.png?alt=media&token=6e5772db-db28-43a1-9070-78b469c337b9"
+          alt="Interior design 2" class="sm:w-full md:w-4/12 " />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/bedroom%20wardrobe%2Fg3.png?alt=media&token=2c46c818-5f0d-4bbb-adc3-0500fd4659a3"
+          alt="Interior design 3" class="sm:w-full md:w-4/12 " />
+      </div>
+
+
+      <div class="md:pr-12 mt-8 flex flex-col gap-6 md:flex-row">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/bedroom%20wardrobe%2Fg4.png?alt=media&token=66949144-6fa3-43ae-a9d3-4feecb5e0295"
+          alt="Interior design 4" class="sm:w-full md:w-4/12" />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/bedroom%20wardrobe%2Fg5.png?alt=media&token=67549cfd-1360-4755-9943-0008cf29bc87"
+          alt="Interior decoration item" class="sm:w-full md:w-4/12" />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/bedroom%20wardrobe%2Fg6.png?alt=media&token=f75b4bd4-9173-4b45-9064-cd12a9160719"
+          alt="Interior design 6" class="sm:w-full md:w-4/12" />
+      </div>
+    </section>
+
+
+    <!--footer-->
+    <footer class="px-10 md:px-32 mt-4 flex flex-col py-12 w-full bg-white -mx-4">
+      <div class="flex flex-col items-start  gap-1  justify-between md:flex-row md:items-center">
+
+        <div class="flex flex-col gap-4 text-lg sm:w-full md:w-52">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.png?alt=media&token=4c49c013-68f9-44ba-ac25-a3bcf8e083fc"
+            alt="Location Image" class="w-40" />
+          <div class="">
+            <span class="font-semibold text-black">Vanagaram, Chennai-95</span>
+            <p class="text-gray-2">76, Krishna Industrial Estate</p>
+          </div>
+          <nav class="font-medium whitespace-nowrap">
+            <div class="flex gap-3  ">
+              <img
+               src="./assests/Vector.svg"
+                alt="Phone Icon" class="" />
+    
+              <a href="tel:9940104232">
+                <h3 class="text-black">+91 99401 04232</h3>
+              </a>
+    
+            </div>
+            <div class="flex gap-3 justify-between">
+              <img
+                src="./assests/Email (1).svg"
+                alt="Email Icon" class="aspect-[1.06] w-[17px]" />
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@iconinteriorschennai.com" target="_blank"
+                className="">
+                <div class="text-gray-2">info@iconinteriorschennai.com</div>
+              </a>
+    
+            </div>
+            <div class="-ml-36 flex items-center gap-16  justify-between md:hidden ">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/interiors-icon.appspot.com/o/logo.svg?alt=media&token=837427f9-d0e6-40ac-94fa-4e0707692fbe"
+                alt="Logo" class="block md:hidden w-24" />
+    
+    
+    
+    
+    
+        
+              
+    
+            </div>
+    
+          </nav>
+        </div>
+
+        <div class="flex flex-col gap-2" gap-4>
+          <h2 class="text-lg font-bold  text-black">Category</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+            <a href="product-3.html">Living Room</a>
+            <a href="product-2.html">Bed Room</a>
+            <a href="product-1.html">Kitchen</a>
+            <a href="product-4.html">Workspace</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <h2 class="text-lg font-bold  text-black">Popular Service</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+            <a href="wall-partition.html">Wall Partition</a>
+            <a href="sliding-wardrobe.html">Sliding Wardrobe</a>
+            <a href="island-kitchen.html">Island Kitchen</a>
+            <a href="conference-table.html">Conference Table</a>
+
+
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <h2 class="text-lg font-bold  text-black">Sitemap</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+            <a href="product-1.html">Product</a>
+            <a href="about.html">Services</a>
+            <a href="#">Article</a>
+            <a href="about.html">About Us</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <h2 class="text-lg font-bold  text-black">Follow Us</h2>
+          <div class="flex flex-col gap-2 mt-4 text-gray-2">
+
+            <a class='flex items-center gap-2' href="#">
+              <img
+                src="./assests/facebook.svg"
+                alt="facebook" class="aspect-square w-[18px]" />Facebook</a>
+            
+            <a class='flex items-center gap-2' href="#">
+              <img
+                src="./assests/instagram.svg"
+                alt="instagram" class="aspect-square w-[18px]" />Instagram</a>
+            <a class='flex items-center gap-2' href="#">
+              <img
+                src="./assests/twitter.svg"
+                alt="twitter" class="aspect-[0.94] w-[17px]" />Twitter</a>
+
+            <a class="flex items-center gap-2" href="#">
+              <img
+                src="./assests/linkedin.svg"
+                alt="linkedin" class="aspect-[0.94] w-[17px]" />Linkedin</a>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-b border-gray mt-12 ">
+      <p class="mt-4 text-gray-2 text-md ">
+        © 2024 by iconinteriorschennai. All rights reserved.
+      </p>
+    </footer>
+  </div>
+
+  <!--Flowbite-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
