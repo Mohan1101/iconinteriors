@@ -21,6 +21,7 @@ nav ul li a:hover {
 
 nav div button{
   border-radius: 7px !important;
+  width: auto;
 }
 
 h1 {
